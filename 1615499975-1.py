@@ -190,7 +190,7 @@ create_xml(xmlt,out2,stid,TMPDIR,sign) #
 
 
 ################################################## Parameter CSV File
-with open(outpath+'/'+stid+'.parameters.'+sign+'.csv', 'w') as f: 
+with open(outpath+'/'+stid+'/'+stid+'.parameters.'+sign+'.csv', 'w') as f: 
     for key in out2.keys():
         f.write("%s,%s\n"%(key,out2[key]))
     #f.write('Sample-Experiment:,'+se+'\n')
