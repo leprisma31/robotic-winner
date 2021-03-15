@@ -1,11 +1,13 @@
 #!/bin/bash -l
-#$ -P apoe-signatures
+#$ -P #project
 #$ -l h_rt=24:00:00
 #$ -N mqpar_jo
 #$ -j y
-#$ -pe omp 28
+#$ -pe omp #n
 #$ -m e
-#$ -M prisma.lopez@uconn.edu
+#$ # -M email@email
+#$ -l cpu_arch=!bulldozer
+
 # Load modules
 
 module load mono/6.10.0
