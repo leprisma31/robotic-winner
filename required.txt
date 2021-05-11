@@ -1,0 +1,16 @@
+13,GUI-1,
+23,GUI-2,
+24,fixedCombinedFolder,
+50,filePaths,
+51,experiments,
+52,ptms,False
+53,fractions,32767
+54,paramGroupIndices,0
+55,string,
+56,boolean,
+57,int,
+58,short,
+59,referenceChannel,
+60,labelMods,
+61,fixedSearchFolder,
+62,tempFolder,
