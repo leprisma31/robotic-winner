@@ -7,13 +7,13 @@ The qsub_mqpar-vX.sh bash script accepts file paths to:
 3) and to an environment variable, `$TMPDIR` 
 
 The create_xml-vX.py script requires 6 arguments.
-The code generates a .xml file for MaxQuant review of .raw (proteomics) data:
+The code (lines 12-19) generate a .xml file for MaxQuant review of .raw (proteomics) data:
 
 qsub ./qsub_mqpar-vX.sh \
-     ./metadata.txt \ # , delimited text file with locations to .raw files, file label
-     ./reference.txt \ # , delimited textfile with tag name,value
-     ./select_tags.txt \ # , delimited text file with tag name,value
-     ./xml_template.xml \ # xml template
+     ./metadata.txt \ # , delimited text file with path locations to .raw files, file label
+     ./required.txt \ # required
+     ./select_tags.txt \ # , delimited text file with xml format tag-name,value
+     ./11TMT.xml \ # referece parameter xml file
      $(date +%s)
      Signature
 

@@ -1,0 +1,2 @@
+/path/to/sample1.raw,sample1
+/path/to/sample2.raw,sample2
