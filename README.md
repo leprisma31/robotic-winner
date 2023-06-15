@@ -13,7 +13,7 @@ qsub ./qsub_mqpar-vX.sh \
      ./metadata.txt \ # "," delimited text file with path locations to .raw files, file label
      ./required.txt \ # required
      ./select_tags.txt \ # , delimited text file with xml tag-name, followed by a select 'value' (required)
-     ./11TMT.xml \ # referece parameter xml file 
+     ./11TMT.xml \ # referece parameter xml file
      $(date +%s) # time 
      Signature # name
 
