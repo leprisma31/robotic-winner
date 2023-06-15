@@ -10,7 +10,7 @@ The create_xml-vX.py script requires 6 arguments.
 The code (lines 12-19) generates a .xml file for MaxQuant review of .raw (proteomics) data. 
 
 qsub ./qsub_mqpar-vX.sh \
-     ./metadata.txt \ # "," delimited text file with path locations to .raw files, file label
+     ./metadata.txt \ # "," delimited text file with path locations to .raw files & the file label (of the sample)
      ./required.txt \ # required
      ./select_tags.txt \ # , delimited text file with xml tag-name, followed by a select 'value' (required)
      ./11TMT.xml \ # referece parameter xml file
