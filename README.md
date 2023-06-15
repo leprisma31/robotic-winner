@@ -12,8 +12,8 @@ The code (lines 12-19) generates a .xml file for MaxQuant review of .raw (proteo
 qsub ./qsub_mqpar-vX.sh \
      ./metadata.txt \ # "," delimited text file with path locations to .raw files, file label
      ./required.txt \ # required
-     ./select_tags.txt \ # , delimited text file with xml format tag-name,value
-     ./11TMT.xml \ # referece parameter xml file
+     ./select_tags.txt \ # , delimited text file with xml tag-name, followed by a select 'value' (required)
+     ./11TMT.xml \ # referece parameter xml file 
      $(date +%s) # time 
      Signature # name
 
