@@ -4,11 +4,22 @@
 MaxQuant is a quantitative proteomics software package designed by the  Max Planck Institute for analyzing large-scale mass-spectrometric data sets. You can download the Max Planck Institute's GUI software at https://www.biochem.mpg.de/6304115/maxquant. 
 
 I created a python3—shell compatible—script
-which generates an XML file to be read by the MaxQuant executable
+which generates an XML file to be read by the MaxQuant
 program. The XML file is similar in structure to the HTML mark-up
 language, and the .py script accepts tab-delimited file(s) including
-specified html </tag> values (select_tags.txt), the 10 parameters required to execute the non-gui MaxQuant
-program.
+specified html </tag> values (select_tags.txt), the 10 parameters required to execute the (non-gui) MaxQuant program. 11TMT.txt includes parameters for 8 tags, which may vary depending on the (your) proteomics experiment:
+
+Project, TMT11 # your project name
+includeContaminants,True
+minpeplen,7
+minuniquepeptides,0
+restrictMods, # not included in 11TMT.txt, the list of accepted modifications are viewable by the MaxQuant GUI 
+fixedModifications, # not included in 11TMT.txt, the list of accepted modifications are viewable by the MaxQuant GUI 
+fastafilePath,C:\Users\nslavov\Desktop\swissprot_human_20180730.fasta
+identifierparserule,>([^\s]*)
+descriptionparserule,>(.*)
+enzymes,Trypsin/P
+
 
 The qsub_mqpar-vX.sh (qsub_mqpar-v1.sh or qsub_mqpar-v2.sh) bash script accepts file paths to:
 
