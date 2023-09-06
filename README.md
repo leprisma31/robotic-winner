@@ -1,7 +1,9 @@
 # robotic-winner
 
 
-MaxQuant is a quantitative proteomics software package designed by the  Max Planck Institute for analyzing large-scale mass-spectrometric data sets. You can download the Max Planck Institute's GUI software at https://www.biochem.mpg.de/6304115/maxquant. The script includes 'module load' or 'qsub' comands & requires installation of mono/6.10.0, maxquant/1.6.17, or python3/3.7.7 .     
+MaxQuant is a quantitative proteomics software package designed by the  Max Planck Institute for analyzing large-scale mass-spectrometric data sets. You can download the Max Planck Institute's GUI software at https://www.biochem.mpg.de/6304115/maxquant. 
+
+The script includes 'module load' or 'qsub' comands & requires installation of mono/6.10.0, maxquant/1.6.17, or python3/3.7.7 .     
 
 I created a python3—shell compatible—script
 which generates an XML file to be read by the executable MaxQuant
