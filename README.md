@@ -1,7 +1,7 @@
 # robotic-winner
 
 
-MaxQuant is a quantitative proteomics software package designed by the  Max Planck Institute for analyzing large-scale mass-spectrometric data sets. You can download the Max Planck Institute's software & or the MaxQuant gui at https://www.biochem.mpg.de/6304115/maxquant. 
+MaxQuant is a quantitative proteomics software package designed by the  Max Planck Institute for analyzing large-scale mass-spectrometric data sets. You can download the Max Planck Institute's software & or the MaxQuant gui at https://www.biochem.mpg.de/6304115/maxquant. You can direct questions to the Max Planck institute at summerschool@maxquant.de .
 
 I created a shell-python3 compatible script (`qsub_mqpar-v1.sh` if `create_xml-v1.py` or `qsub_mqpar-v2.sh` if `create_xml-v2.py`)  which generates an XML file from a template file, `11TMT.txt`, & accepts tag values from `required.txt` & `select_tags.txt`, select-tags.txt, which includes 10 specified html </tag> values, required to execute the MaxQuant program. `metadata.txt` & `UP000005640_9606.fasta`,  is a ',' delimited list of proteomics samples names with their path locations or a .fasta file, respectively. The new XMl file is then read by the executable (non-gui) MaxQuant program, & the .py script directs out files to paths listed in `out.txt`. 
 The scripts includes 'module load' or 'qsub' comands & requires installation of mono/6.10.0, maxquant/1.6.17, or python3/3.7.7 .     
